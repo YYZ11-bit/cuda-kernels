@@ -4,7 +4,6 @@
 #include <cstdlib>
 #include <vector>
 
-// 你的 scan kernel 放这里
 // 输入：d_in [N]
 // 输出：d_out [N]，其中 d_out[i] = sum_{j=0}^{i} d_in[j]（包含前缀和）
 __device__ float wrap_reduce(float val){

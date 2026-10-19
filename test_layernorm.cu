@@ -4,7 +4,6 @@
 #include <cstdlib>
 #include <vector>
 
-// 你的 layernorm kernel 放这里
 // 要求：输入 d_in [rows, cols]，gamma [cols]，beta [cols]
 // 输出 d_out [rows, cols]
 // 对每一行做：out = (x - mean) / sqrt(var + eps) * gamma + beta

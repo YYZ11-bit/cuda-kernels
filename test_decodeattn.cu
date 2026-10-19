@@ -5,7 +5,6 @@
 #include <vector>
 #include <algorithm>
 
-// 你的 decode_attention kernel 放这里
 // 输入：d_Q [1, d_head], d_K [seq_len, d_head], d_V [seq_len, d_head]
 // 输出：d_O [1, d_head]
 // 计算：O = softmax(Q * K^T / sqrt(d_head)) * V

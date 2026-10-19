@@ -4,7 +4,6 @@
 #include <cstdlib>
 #include <vector>
 
-// 你的 transpose kernel 放这里
 // 要求：输入 d_in [rows, cols]，输出 d_out [cols, rows]
 // d_out[c * rows + r] = d_in[r * cols + c]
 #define TILE 32

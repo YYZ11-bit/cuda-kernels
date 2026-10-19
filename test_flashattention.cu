@@ -5,7 +5,6 @@
 #include <vector>
 #include <algorithm>
 
-// 你的 flash_attention kernel 放这里
 // 输入：d_Q [seq_len, d_head], d_K [seq_len, d_head], d_V [seq_len, d_head]
 // 输出：d_O [seq_len, d_head]
 // 计算：O = softmax(Q * K^T / sqrt(d_head)) * V
