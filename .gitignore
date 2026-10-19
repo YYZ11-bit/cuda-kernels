@@ -1,0 +1,12 @@
+```text
+*.o
+*.out
+test_GEMM
+test_decodeattn
+test_flashattention
+test_layernorm
+test_reduce
+test_scan
+test_softmax
+test_transpose
+*.ncu-rep
