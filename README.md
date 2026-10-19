@@ -8,7 +8,7 @@
 |---|---|---|
 | Decode Attention | `test_decodeattn.cu` | 基于 KV Cache 的单 token 解码，访存合并 |
 | FlashAttention | `test_flashattention.cu` | 分块计算，记录并分析了 ncu profiling 数据（见下文） |
-| GEMM | `test_GEMM.cu` | shared memory tiling、register tiling、bank conflict 规避 |
+| GEMM | `test_GEMM.cu` | shared memory tiling、register tiling、bank conflict 规避，包含多种尺寸的边界测试（2~128），验证非 64 倍数下的正确性。 |
 | LayerNorm | `test_layernorm.cu` | warp-level 归约，shared memory 通信 |
 | Reduce | `test_reduce.cu` | warp shuffle 优化，避免 shared memory bank conflict |
 | Scan (Prefix Sum) | `test_scan.cu` | 基于 __shfl_up_sync 的 Warp-level 局部前缀和，配合 Shared Memory 完成 Block 级归约 |
